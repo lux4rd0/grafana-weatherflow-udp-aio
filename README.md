@@ -30,7 +30,7 @@ To get started, download the code from this repository and extract it into an em
 
     wget https://github.com/lux4rd0/grafana-weatherflow-udp-aio/archive/main.zip
     unzip main.zip
-    cd grafana-weatherflow-udp-aio
+    cd grafana-weatherflow-udp-aio-main
     
 From that directory, run the docker-compose command:
 
