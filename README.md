@@ -3,9 +3,11 @@
 
 ## About The Project
 
+This Grafana WeatherFlow UDP All-In-One example has been put together to help you get up and running quickly with a UDP collector to visualize your raw WeatherFlow metric stream. 
+
 <center><img src="./weatherflow-weatherflow_overview.jpg"></center>
 
-This Grafana WeatherFlow UDP All-In-One example has been put together to help you get up and running quickly with a UDP collector to visualize your raw WeatherFlow metric stream. It takes the [UDP collector](https://github.com/vinceskahan/weatherflow-udp-listener) from [Vince Skahan](https://github.com/vinceskahan) and adds a pre-configured [Grafana](https://grafana.com/oss/grafana/) front-end (Dashboards) with an [InfluxDB](https://www.influxdata.com/products/influxdb/) backend (Database). 
+It takes the [UDP collector](https://github.com/vinceskahan/weatherflow-udp-listener) from [Vince Skahan](https://github.com/vinceskahan) and adds a pre-configured [Grafana](https://grafana.com/oss/grafana/) front-end (Dashboards) with an [InfluxDB](https://www.influxdata.com/products/influxdb/) backend (Database). 
 
 <center><img src="./weatherflow-weatherflow_details-live.jpg"></center>
 
