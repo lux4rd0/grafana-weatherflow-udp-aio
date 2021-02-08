@@ -41,6 +41,8 @@ services:
       published: 8086
       target: 8086
     restart: always
+    volumes:
+    - ./data:/var/lib/influxdb:rw
   wfudp:
     build:
       context: ./wfudp
