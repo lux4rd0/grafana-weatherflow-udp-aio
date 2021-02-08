@@ -1,7 +1,10 @@
 
+
 ## grafana-weatherflow-udp-aio
 
 ## About The Project
+
+<center><img src="./weatherflow_aio.png"></center>
 
 This **Grafana WeatherFlow UDP All-In-One** example is put together to help you get up and running quickly with a UDP collector to visualize your raw [WeatherFlow Tempest](https://weatherflow.com/tempest-weather-system/) metric stream. 
 
