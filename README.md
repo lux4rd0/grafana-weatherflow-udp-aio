@@ -3,7 +3,7 @@
 
 ## About The Project
 
-This **Grafana WeatherFlow UDP All-In-One** example has been put together to help you get up and running quickly with a UDP collector to visualize your raw [WeatherFlow Tempest](https://weatherflow.com/tempest-weather-system/) metric stream. 
+This **Grafana WeatherFlow UDP All-In-One** example is put together to help you get up and running quickly with a UDP collector to visualize your raw [WeatherFlow Tempest](https://weatherflow.com/tempest-weather-system/) metric stream. 
 
 <center><img src="./weatherflow-weatherflow_overview.jpg"></center>
 
@@ -36,13 +36,13 @@ From that directory, run the docker-compose command:
 
     docker-compose -f docker-compose.yml up -d
 
-This will start to download all of the needed application containers (Grafana and InfluxDB) and it builds the WeatherFlow UDP container.
+This will start to download the Grafana and InfluxDB application containers (Grafana and InfluxDB) and it builds the WeatherFlow UDP container. The "`-d`" command places the containers into "detached" mode *(run containers in the background)*. The configuration also sets each of the containers to auto-start.
 
 *Note, this project is built and tested on Linux CentOS 7.* 
 
 **Grafana Dashboards**
 
-Once all of the docker containers are started up, point your Web browser to the Grafana page, typically http://hostname:3000/ - with hostname being the name of the server you ran the docker-compose up -d command on. The "**WeatherFlow - WeatherFlow (Details/Live)**" dashboard is defaulted without having to login.
+Once all of the docker containers are started up, point your Web browser to the Grafana page, typically http://hostname:3000/ - with hostname being the name of the server you ran the `docker-compose up -d` command on. The "**WeatherFlow - WeatherFlow (Details/Live)**" dashboard is defaulted without having to log into Grafana.
 
 *Note: this docker-compose stack is designed to be as easy as possible to deploy and go. Anonymous logins have been enabled and the default user has a **Viewer** role. This can be changed to either an **Admin** or **Editor** role by changing the Grafana environmental variable in the `docker-compose.yml` file to:*
 
