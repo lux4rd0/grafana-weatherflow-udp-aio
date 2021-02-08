@@ -7,7 +7,7 @@ This Grafana WeatherFlow UDP All-In-One example has been put together to help yo
 
 ## Getting Started
 
-The project is built around a pre-configured Docker stack of the following:
+The project is built around a pre-configured Docker stack containing the following containers:
 
  - [Grafana](https://grafana.com/oss/grafana/)
  - [InfluxDB](https://www.influxdata.com/products/influxdb/)
@@ -20,7 +20,7 @@ The project is built around a pre-configured Docker stack of the following:
 
 ## Using
 
-This was built and tested on Linux CentOS 7. To get started, download the code from this repository and extract it into an empty directory. For example:
+To get started, download the code from this repository and extract it into an empty directory. For example:
 
     wget https://github.com/lux4rd0/grafana-weatherflow-udp-aio/archive/main.zip
     unzip main.zip
@@ -31,6 +31,8 @@ From that directory, run the docker-compose command:
     docker-compose -f ./docker-compose.yml up -d
 
 This will start to download all of the needed application containers (Grafana and InfluxDB) and it builds the WeatherFlow UDP container.
+
+*Note, this project is built and tested on Linux CentOS 7.* 
 
 **Grafana Dashboards**
 
