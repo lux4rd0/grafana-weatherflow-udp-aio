@@ -62,7 +62,11 @@ The data collected from the WeatherFlow UDP collector gets sent over to the Infl
     docker-compose -f docker-compose-datavolume.yml up -d
 
 This uses the /data folder to store the InfluxDB data files. Update the `docker-compose-datavolume.yml` if you want to place it someplace else on your file system.
- 
+
+## Default Security
+
+The InfluxDB security settings are set from the `docker-compose.yml` configuration. Please change them if you wish to have something unique to your deployment. The configuration here also creates a default "weatherflow" database but doesn't require authentication. Changes to each of these components to make them more secure with required authentication is outside the scope of this example. However, please reach out if you'd like more information on how to make the required changes to these configurations. 
+
 ## Roadmap
 
 See the open issues for a list of proposed features (and known issues).
