@@ -3,7 +3,7 @@
 
 ## About The Project
 
-This Grafana WeatherFlow UDP All-In-One example has been put together to help you get up and running quickly with a UDP collector to visualize your raw WeatherFlow metric stream. 
+This **Grafana WeatherFlow UDP All-In-One** example has been put together to help you get up and running quickly with a UDP collector to visualize your raw [WeatherFlow Tempest](https://weatherflow.com/tempest-weather-system/) metric stream. 
 
 <center><img src="./weatherflow-weatherflow_overview.jpg"></center>
 
@@ -34,7 +34,7 @@ To get started, download the code from this repository and extract it into an em
     
 From that directory, run the docker-compose command:
 
-    docker-compose -f ./docker-compose.yml up -d
+    docker-compose -f docker-compose.yml up -d
 
 This will start to download all of the needed application containers (Grafana and InfluxDB) and it builds the WeatherFlow UDP container.
 
@@ -55,6 +55,13 @@ The dashboards included in this All In One can also be downloaded separately if 
 - [Weather - WeatherFlow (Details/Live)](https://grafana.com/grafana/dashboards/13858)
 - [Weather - WeatherFlow Overview](https://grafana.com/grafana/dashboards/13857)
 
+## Data Retention and Storage Locations
+
+The data collected from the WeatherFlow UDP collector gets sent over to the InfluxDB database. The storage for that data is persisted into the deployed InfluxDB container. There are a few different ways to persist that data outside of the container, specifically by using volume mounts. I've added a second docker-compose configuration that can be used in this example:
+
+    docker-compose -f docker-compose-datavolume.yml up -d
+
+This uses the /data folder to store the InfluxDB data files. Update the `docker-compose-datavolume.yml` if you want to place it someplace else on your file system.
  
 ## Roadmap
 
