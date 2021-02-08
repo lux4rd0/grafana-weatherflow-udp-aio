@@ -34,12 +34,20 @@ This will start to download all of the needed application containers (Grafana an
 
 **Grafana Dashboards**
 
-Once all of the docker containers are started up, point your Web browser to the Grafana page, typically http://hostname:3000/ - with hostname being the name of the server you ran the docker-compose up -d command on. The "WeatherFlow - WeatherFlow (Details/Live) " dashboard is defaulted without having to login.
+Once all of the docker containers are started up, point your Web browser to the Grafana page, typically http://hostname:3000/ - with hostname being the name of the server you ran the docker-compose up -d command on. The "**WeatherFlow - WeatherFlow (Details/Live)**" dashboard is defaulted without having to login.
 
-*Note: this docker-compose stack is designed to be as easy as possible to deploy and go. Anonymous logins have been enabled and the default user has a Viewer role. This can be changed to either an **Admin** or **Editor** role by changing the Grafana environmental variable in the docker-compose.yml file to:*
+*Note: this docker-compose stack is designed to be as easy as possible to deploy and go. Anonymous logins have been enabled and the default user has a **Viewer** role. This can be changed to either an **Admin** or **Editor** role by changing the Grafana environmental variable in the `docker-compose.yml` file to:*
 
     GF_AUTH_ANONYMOUS_ORG_ROLE: Viewer
-    
+
+## Downloading Grafana WeatherFlow Dashboards Individually
+
+The dashboards included in this All In One can also be downloaded separately if so desired:
+
+- [Weather - WeatherFlow (Details/Live)](https://grafana.com/grafana/dashboards/13858)
+- [Weather - WeatherFlow Overview](https://grafana.com/grafana/dashboards/13857)
+
+ 
 ## Roadmap
 
 See the open issues for a list of proposed features (and known issues).
