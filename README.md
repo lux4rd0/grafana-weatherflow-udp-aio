@@ -36,7 +36,7 @@ From that directory, run the docker-compose command:
 
     docker-compose -f docker-compose.yml up -d
 
-This will start to download the Grafana and InfluxDB application containers (Grafana and InfluxDB) and it builds the WeatherFlow UDP container. The "`-d`" command places the containers into "detached" mode *(run containers in the background)*. The configuration also sets each of the containers to auto-start.
+This will start to download the Grafana and InfluxDB application containers (**Grafana** and **InfluxDB**) and it builds the **WeatherFlow UDP** container. The "`-d`" command places the containers into "detached" mode *(run containers in the background)*. The configuration also sets each of the containers to auto-start.
 
 *Note, this project is built and tested on Linux CentOS 7.* 
 
