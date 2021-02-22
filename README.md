@@ -1,8 +1,3 @@
-
-
-
-## grafana-weatherflow-udp-aio
-
 ## About The Project
 
 <center><img src="./weatherflow_aio.png"></center>
