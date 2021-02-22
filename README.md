@@ -1,5 +1,6 @@
 
 
+
 ## grafana-weatherflow-udp-aio
 
 ## About The Project
@@ -15,6 +16,9 @@ It takes the [UDP collector](https://github.com/vinceskahan/weatherflow-udp-list
 <center><img src="./weatherflow-weatherflow_details-live.jpg"></center>
 
 ## Getting Started
+
+*Note - I've built out a newer stack that uses Grafana Loki instead of InfluxDB. You can view those details over in my [weatherflow-dashboards-aio](https://github.com/lux4rd0/weatherflow-dashboards-aio) repository...*
+
 
 The project is built around a pre-configured Docker stack containing the following containers:
 
